@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Titillium Web';
+  color: #929292;
+  background: #fbfbfb;
+}
+
+.container {
+  display: flex;
+  width: 750px;
+  height: 450px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.sidebar {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.main {
+  width: 70%;
+  box-shadow: -7px 0 8px -5px #ccc;
+}
+.main header {
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #e0cbf0, #5a1d89 90%, #4c236c);
+}
+
+.main header img {
+  border-radius: 100px;
+  width: 150px;
+  border: 5px solid white;
+}
+
+/* Menu */
+
+.menu li {
+  border-left: 5px solid transparent;
+  padding: 15px 0;
+  padding-left: 40px;
+}
+
+.menu li:hover {
+  border-left: 5px solid #5a1d89;
+  background: rgba(1,1,1, 0.04);
+  cursor: pointer;
+}
+
+.menu li a {
+  color: #929292;
+  text-decoration: none;
+}
+
+.sidebar header {
+    height: 150px;
+    display: flex;
+}
+
+.sidebar header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
