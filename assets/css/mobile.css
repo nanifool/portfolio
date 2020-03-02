@@ -1,4 +1,4 @@
-@media (min-width: 641px) {
+@media (min-width: 320px) {
   .container {
     width: 90%;
   }
@@ -6,6 +6,13 @@
   .contact-me ul {
     columns: 1;
   }
+
+  .menu li {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 641px) {
 
 }
 
@@ -16,5 +23,9 @@
 
   .contact-me ul {
     columns: 2;
+  }
+
+  .menu li {
+    padding-left: 40px;
   }
 }
