@@ -7,4 +7,8 @@ window.onload = function () {
     $("." + id).show()
   })
 
+  $(".icon-menu").on('click', function(e) {
+    $('.sidebar').toggleClass('active')
+  })
+
 }

@@ -7,13 +7,28 @@
     columns: 1;
   }
 
-  .menu li {
+  .sidebar {
+    width: 50px;
+  }
+
+  .sidebar .menu { display: none; }
+  .sidebar .menu li {
     padding-left: 10px;
+  }
+
+  .main {
+    width: calc(100% - 50px);
   }
 }
 
 @media (min-width: 641px) {
+  .sidebar {
+    width: 30%;
+  }
 
+  .main {
+    width: 70%;
+  }
 }
 
 @media (min-width: 961px) {
