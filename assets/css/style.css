@@ -25,11 +25,10 @@ h2 {
 
 .container {
   display: flex;
-  width: 750px;
-  height: 450px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-radius: 5px;
   background: #fff;
+  min-height: 450px;
 }
 
 .sidebar {
@@ -37,11 +36,13 @@ h2 {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  min-width: 180px;
 }
 
 .main {
   width: 70%;
   box-shadow: -7px 0 8px -5px #ccc;
+  min-width: 250px;
 }
 .main header {
   height: 230px;
@@ -49,6 +50,7 @@ h2 {
   justify-content: center;
   align-items: center;
   background: linear-gradient(145deg, #e0cbf0, #5a1d89 90%, #4c236c);
+  border-radius: 0px 5px 0px 0px;
 }
 
 .main header img {
@@ -89,10 +91,6 @@ h2 {
 }
 
 .hide { display: none; }
-
-.contact-me ul {
-  columns: 2;
-}
 
 .contact-me li {
   padding: 10px;
