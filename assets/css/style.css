@@ -18,6 +18,11 @@ body {
   background: #fbfbfb;
 }
 
+h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
 .container {
   display: flex;
   width: 750px;
@@ -84,3 +89,33 @@ body {
 }
 
 .hide { display: none; }
+
+.contact-me ul {
+  columns: 2;
+}
+
+.contact-me li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-me li:hover i {
+  color: #502274;
+}
+
+.contact-me li i {
+  font-size: 25px;
+}
+
+.contact-me li span,
+.contact-me li a {
+    padding-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #929292;
+}
+
+.main section {
+  padding: 20px;
+}
