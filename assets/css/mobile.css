@@ -11,7 +11,7 @@
     width: 50px;
   }
 
-  .sidebar .menu { display: none; }
+  /* .sidebar .menu { display: none; } */
   .sidebar .menu li {
     padding-left: 10px;
   }
