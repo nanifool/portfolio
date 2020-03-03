@@ -1,3 +1,5 @@
+/* celulares */
+
 @media (min-width: 320px) {
   .container {
     width: 90%;
@@ -11,7 +13,13 @@
     width: 50px;
   }
 
-  /* .sidebar .menu { display: none; } */
+  .sidebar.active { flex-direction: column; position: relative; }
+  .sidebar.active i.fa-bars { display: none; }
+  .sidebar i.close { display: none; }
+  .sidebar.active i.close { position: absolute; right: 0; top: 0; display: block; }
+  .sidebar .menu { display: none; }
+  .sidebar.active .menu { display: block; }
+
   .sidebar .menu li {
     padding-left: 10px;
   }
@@ -21,15 +29,26 @@
   }
 }
 
+/* tablets */
+
 @media (min-width: 641px) {
   .sidebar {
-    width: 30%;
+    width: 30% !important;
+    flex-direction: column;
   }
 
   .main {
     width: 70%;
   }
+
+  .sidebar i { display: none !important; }
+
+  .sidebar .menu { display: block; }
+  
 }
+
+
+/* desktop */
 
 @media (min-width: 961px) {
   .container {

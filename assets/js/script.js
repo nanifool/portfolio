@@ -7,7 +7,7 @@ window.onload = function () {
     $("." + id).show()
   })
 
-  $(".icon-menu").on('click', function(e) {
+  $(".icon-menu, .close").on('click', function(e) {
     $('.sidebar').toggleClass('active')
   })
 
