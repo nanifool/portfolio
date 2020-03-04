@@ -24,6 +24,14 @@ h2 {
   font-size: 25px;
 }
 
+h3 {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #4c236c;
+}
+
 .container {
   display: flex;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -33,15 +41,21 @@ h2 {
 }
 
 .sidebar {
-  width: 30%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  min-width: 100px;
+  position: relative;
+}
+
+.sidebar i { 
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar i:hover {
+  color: #4c236c;
 }
 
 .main {
-  width: 70%;
   box-shadow: -7px 0 8px -5px #ccc;
 }
 
@@ -129,4 +143,47 @@ h2 {
 
 .main section {
   padding: 20px;
+}
+
+/* skills */
+
+.skills ul li > div {
+  border-bottom: 2px solid #eaeaea;
+  padding: 5px;
+  display: flex;
+}
+
+.skills ul li:last-child > div {
+  border-bottom: none;
+}
+
+.skills ul div > div {
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: #4c236c;
+  flex-wrap: wrap;
+}
+
+.skills ul p {
+  text-align: center;
+  padding: 10px;
+  min-width: 100px;
+  color: #4c236c;
+  font-weight: bold;
+}
+
+.skills ul p i {
+ display: block;
+ font-size: 30px;
+ margin-bottom: 5px;
+}
+
+.skills ul {
+  margin-bottom: 30px;
+}
+
+.active {
+  width: 100% !important;
 }
