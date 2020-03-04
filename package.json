@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "httpserver"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +12,8 @@
   "dependencies": {
     "fontawesome": "^5.6.3",
     "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "httpserver": "^0.3.0"
   }
 }
