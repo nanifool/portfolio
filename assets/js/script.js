@@ -11,4 +11,12 @@ window.onload = function () {
     $('.sidebar').toggleClass('active')
   })
 
+  $('.skills-tabs li').on('click', function() {
+    $('.skills-tabs li').removeClass('active')
+    $(this).addClass("active")
+    var id = $(this).attr('id')
+    $('.skills-descriptions').addClass('hide')
+    $('.'+id).removeClass('hide')
+  })
+
 }
